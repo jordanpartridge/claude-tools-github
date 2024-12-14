@@ -1,0 +1,37 @@
+{
+    "name": "jordanpartridge/claude-tools-github",
+    "description": "GitHub commands for Claude Tools CLI",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "JordanPartridge\\ClaudeToolsGithub\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JordanPartridge\\ClaudeToolsGithub\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "jordanpartridge/github-client": "^0.3",
+        "laravel-zero/framework": "^10.0",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5",
+        "orchestra/testbench": "^8.17",
+        "mockery/mockery": "^1.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JordanPartridge\\ClaudeToolsGithub\\CommandServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
